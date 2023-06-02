@@ -124,12 +124,12 @@ if (n15 % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let val = 7;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
-  console.log("Uguale a 7 o maggiore");
+  console.log("Uguale a 10 o maggiore");
 }
 
 /* ESERCIZIO 11
@@ -144,6 +144,7 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -151,6 +152,7 @@ me.city = "Toronto";
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della
@@ -158,7 +160,8 @@ delete me.lastName;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-me.skills.push("css");
+me.skills.pop();
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
