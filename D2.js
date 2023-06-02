@@ -17,9 +17,6 @@ let number = 6;
 if (number !== 5) {
   console.log("not equal");
 }
-
-console.log(number);
-
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5
   (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -31,8 +28,6 @@ if (n1 % 5 === 0) {
   console.log("divisibile per 5");
 }
 
-console.log(n1);
-
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro
   addizione/sottrazione sia uguale a 8.
@@ -41,7 +36,7 @@ console.log(n1);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n4 = 30;
 let n5 = 40;
-console.log(n4 === 8 || n5 === 8 || n5 + n4 === 8);
+console.log(n4 === 8 || n5 === 8 || n5 + n4 === 8 || n5 - n4 === 8);
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile 
@@ -56,9 +51,9 @@ console.log(n4 === 8 || n5 === 8 || n5 + n4 === 8);
 let totalShoppingCart = 5;
 
 if (totalShoppingCart > 50) {
-  console.log("Spedizione gratuita");
+  console.log("Total amount", totalShoppingCart);
 } else {
-  console.log("totalShoppingCart + 10");
+  console.log("Total amount", totalShoppingCart + 10);
 }
 
 /* ESERCIZIO 6
@@ -77,9 +72,17 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let n7 = 7;
-let n6 = 6;
-let n8 = 8;
+let nx = 7;
+let ny = 6;
+let nz = 8;
+
+if (nx > ny && ny > nz) {
+  console.log(nx, ny, nz);
+} else if (nz > nx && nx > ny) {
+  console.log(nz, nx, ny);
+} else {
+  console.log(ny, nz, nx);
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di
@@ -87,7 +90,11 @@ let n8 = 8;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(typeof n7);
+if (typeof n1 === number) {
+  console.log("it's a number");
+} else {
+  console.log("it's not a number");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un
@@ -95,7 +102,13 @@ console.log(typeof n7);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(50 % 2);
+let n15 = 98;
+
+if (n15 % 2 === 0) {
+  console.log("questo è un numero pari");
+} else {
+  console.log("questo non è un numero pari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
