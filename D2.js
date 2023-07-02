@@ -195,6 +195,9 @@ console.log(numbers);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-numbers.pop(10);
-numbers.push(100);
-console.log(numbers);
+let numbersLength = numbers.length;
+console.log("numbers length", numbersLength);
+let whatIndexDoesItHave = numbersLength - 1;
+console.log("what index does the last element have", whatIndexDoesItHave);
+numbers.splice(9, 1, 100);
+console.log("numbers after splice", numbers);
